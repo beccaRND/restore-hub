@@ -1,0 +1,20 @@
+{
+  "totalGrantsDeployed": 19500000,
+  "totalPotentiallyRecoverable": 8200000,
+  "creditsIssuedValue": 1450000,
+  "redeploymentPool": 620000,
+  "pipeline": {
+    "projectsWithInterest": 60,
+    "estimatedValue": 3800000
+  },
+  "projectStages": {
+    "granted": 142,
+    "implementing": 98,
+    "implemented": 85,
+    "listed": 52,
+    "interest_received": 28,
+    "credit_issued": 12,
+    "credit_sold": 6,
+    "recouped": 2
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "creditTypes": [
+    { "abbreviation": "C", "name": "carbon", "unit": "metric ton CO2 equivalent", "precision": 6 },
+    { "abbreviation": "BT", "name": "BioTerra", "unit": "weighted 10m² score of restoration/preservation", "precision": 6 },
+    { "abbreviation": "KSH", "name": "kilo-sheep-hour", "unit": "number of sheep × hours grazed / 1000", "precision": 6 },
+    { "abbreviation": "MBS", "name": "Marine Biodiversity Stewardship", "unit": "marine biodiversity restoration units", "precision": 6 },
+    { "abbreviation": "USS", "name": "Umbrella Species Stewardship", "unit": "hectare of umbrella species habitat stewarded", "precision": 6 }
+  ],
+  "creditClasses": [
+    { "id": "C01", "name": "Verified Carbon Standard", "creditType": "C", "projectCount": 3, "batchCount": 10, "metadata": "regen:13toVgkhsDeQTJA1DJ1diGYTb3Cmy1rZV24auNXxNPTcVTySoiFtiFq.rdf" },
+    { "id": "C02", "name": "CarbonFuture Credits", "creditType": "C", "projectCount": 10, "batchCount": 22, "metadata": "regen:13toVgasFvVdGFg5VeijGetEbGHSJZwBc4jUVei2euKFgE6wqNp2Hgz.rdf" },
+    { "id": "C03", "name": "Toucan Biochar Credits", "creditType": "C", "projectCount": 5, "batchCount": 8, "metadata": "regen:13toVgLqqFAjByA2kZkDFq7PZB2HUyD3u8qFDiBidYjpdYBLeJvAzxB.rdf" },
+    { "id": "C04", "name": "Regen Carbon Credits", "creditType": "C", "projectCount": 12, "batchCount": 15, "metadata": "regen:13toVgBisQqEmauHntQsW6mwpz71RSTwsjzhn9gxCQ16tdRjHPHTRoK.rdf" },
+    { "id": "C05", "name": "GreenPrint Carbon", "creditType": "C", "projectCount": 4, "batchCount": 6, "metadata": "regen:13toVhdQSiTZYzdGS41TfEZJ1L4STgYrkixNxPT5R5ZkSjkMUFT11DA.rdf" },
+    { "id": "BT01", "name": "BioTerra Restoration", "creditType": "BT", "projectCount": 2, "batchCount": 4, "metadata": "regen:13toVhP28vRJKkkKCfiWod83aUUKQnvutB3U3v6wdLjnS6J2GF2HcoC.rdf" },
+    { "id": "KSH01", "name": "Regenerative Grazing", "creditType": "KSH", "projectCount": 1, "batchCount": 2, "metadata": "regen:13toVh3S3R9HK4CcvnWDAQDbpwekWosPNQhVn8drrjziNznPnZdmCm9.rdf" },
+    { "id": "MBS01", "name": "Marine Stewardship", "creditType": "MBS", "projectCount": 1, "batchCount": 1, "metadata": "regen:13toVhmG8hxSeQseTQG51EwNpjoqLe6k9C1t3XY3PZohX6AttnuJjWZ.rdf" },
+    { "id": "USS01", "name": "Umbrella Species Conservation", "creditType": "USS", "projectCount": 2, "batchCount": 3, "metadata": "regen:13toVfzccLtKL9pDzRojtTAKU61JH2kDKMggg35LoCUCDHQfgAodUh2.rdf" }
+  ],
+  "recentBatches": [
+    { "denom": "C01-001-20150101-20151231-001", "projectId": "C01-001", "classId": "C01", "jurisdiction": "CD-MN", "startDate": "2015-01-01", "endDate": "2015-12-31", "issuanceDate": "2022-05-06" },
+    { "denom": "C02-001-20190101-20191231-001", "projectId": "C02-001", "classId": "C02", "jurisdiction": "US-WA", "startDate": "2019-01-01", "endDate": "2019-12-31", "issuanceDate": "2022-05-06" },
+    { "denom": "C01-002-20190101-20191231-001", "projectId": "C01-002", "classId": "C01", "jurisdiction": "KE", "startDate": "2019-01-01", "endDate": "2019-12-31", "issuanceDate": "2022-05-06" },
+    { "denom": "C02-003-20190101-20200101-001", "projectId": "C02-003", "classId": "C02", "jurisdiction": "US-PA", "startDate": "2019-01-01", "endDate": "2020-01-01", "issuanceDate": "2022-06-17" },
+    { "denom": "C01-003-20150701-20160630-001", "projectId": "C01-003", "classId": "C01", "jurisdiction": "PE-MDD", "startDate": "2015-07-01", "endDate": "2016-06-30", "issuanceDate": "2022-10-13" },
+    { "denom": "BT01-001-20200101-20201231-001", "projectId": "BT01-001", "classId": "BT01", "jurisdiction": "CO-ANT", "startDate": "2020-01-01", "endDate": "2020-12-31", "issuanceDate": "2023-02-15" }
+  ],
+  "networkStats": {
+    "totalProjects": 58,
+    "totalCreditClasses": 13,
+    "totalBatches": 78,
+    "activeSellOrders": 23,
+    "creditTypes": 5
+  }
+}

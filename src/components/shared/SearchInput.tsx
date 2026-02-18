@@ -1,0 +1,34 @@
+import { Search } from 'lucide-react';
+
+interface SearchInputProps {
+  value: string;
+  onChange: (value: string) => void;
+  placeholder?: string;
+}
+
+export default function SearchInput({ value, onChange, placeholder = 'Search...' }: SearchInputProps) {
+  return (
+    <div className="relative">
+      <Search
+        size={16}
+        strokeWidth={1.75}
+        className="absolute left-3 top-1/2 -translate-y-1/2"
+        style={{ color: 'var(--zfp-text-muted)' }}
+      />
+      <input
+        type="text"
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        placeholder={placeholder}
+        className="w-full pl-9 pr-4 py-2.5 rounded-lg border text-sm outline-none transition-colors focus:border-[var(--zfp-green)] focus:shadow-[var(--shadow-active)]"
+        style={{
+          backgroundColor: 'var(--zfp-cream-dark)',
+          borderColor: 'var(--zfp-border)',
+          color: 'var(--zfp-text)',
+          fontFamily: 'var(--font-body)',
+          borderRadius: 'var(--radius-input)',
+        }}
+      />
+    </div>
+  );
+}

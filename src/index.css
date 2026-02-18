@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@import "tailwindcss";
+@import "./styles/tokens.css";
+
+/* ========================================
+   Tailwind v4 Theme Configuration
+   ======================================== */
+@theme {
+  /* Colors */
+  --color-zfp-green: #2D6A4F;
+  --color-zfp-green-light: #52B788;
+  --color-zfp-green-pale: #D8F3DC;
+  --color-zfp-green-deep: #1B4332;
+  --color-zfp-green-mid: #40916C;
+  --color-zfp-green-soft: #95D5B2;
+
+  --color-zfp-soil: #8B6914;
+  --color-zfp-soil-light: #C9A227;
+  --color-zfp-soil-pale: #FEF3C7;
+
+  --color-zfp-cream: #FAF6F1;
+  --color-zfp-cream-dark: #F0E9DF;
+  --color-zfp-charcoal: #1A1A1A;
+
+  --color-zfp-text: #2C2C2C;
+  --color-zfp-text-muted: #6B7280;
+  --color-zfp-text-light: #9CA3AF;
+
+  --color-zfp-border: #E5DFD5;
+  --color-zfp-border-strong: #D1C9BC;
+
+  --color-status-available: #52B788;
+  --color-status-conversation: #F59E0B;
+  --color-status-committed: #2D6A4F;
+  --color-status-private: #9CA3AF;
+  --color-status-unfunded: #DC2626;
+
+  --color-regen-accent: #4FB573;
+
+  /* Font families */
+  --font-heading: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+
+  /* Border radius */
+  --radius-card: 12px;
+  --radius-button: 8px;
+  --radius-badge: 999px;
+  --radius-input: 8px;
+
+  /* Shadows */
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.06);
+  --shadow-card-hover: 0 4px 16px rgba(0,0,0,0.08);
+  --shadow-modal: 0 8px 32px rgba(0,0,0,0.12);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--zfp-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--zfp-border-strong);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--zfp-text-muted);
+}
+
+/* Range input styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  border-radius: 4px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--zfp-green);
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--zfp-green);
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+}
+
+/* ========================================
+   Leaflet Map Overrides
+   ======================================== */
+.leaflet-popup-content-wrapper {
+  border-radius: 12px !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1) !important;
+  padding: 0 !important;
+}
+
+.leaflet-popup-content {
+  margin: 12px 14px !important;
+  font-family: var(--font-body) !important;
+}
+
+.leaflet-popup-tip {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+}
+
+.leaflet-control-zoom a {
+  border-radius: 8px !important;
+  font-size: 14px !important;
+  color: var(--zfp-text) !important;
+}
+
+.leaflet-control-zoom {
+  border: 1px solid var(--zfp-border) !important;
+  border-radius: 10px !important;
+  overflow: hidden;
+}

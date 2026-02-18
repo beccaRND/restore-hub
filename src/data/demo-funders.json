@@ -1,0 +1,120 @@
+[
+  {
+    "id": "funder-bobs-red-mill",
+    "name": "Bob's Red Mill",
+    "slug": "bobs-red-mill",
+    "description": "Employee-owned whole grain leader investing in soil health across the Pacific Northwest, supporting regenerative agriculture on the farms that grow the grains behind their products.",
+    "partnerSince": "2022-03-15",
+    "contributionTotal": 452000,
+    "regions": ["OR", "WA"],
+    "projectsSupported": 35,
+    "acresImpacted": 2800,
+    "practiceBreakdown": {
+      "cover_cropping": 14,
+      "compost_application": 11,
+      "reduced_tillage": 5,
+      "nutrient_management": 3,
+      "hedgerow_planting": 2
+    },
+    "collectiveImpact": {
+      "estimatedCarbonLow": 3920,
+      "estimatedCarbonHigh": 7280
+    },
+    "storyNarrative": "When Bob's Red Mill first joined Restore Hub in 2022, their team visited a wheat farm outside Pendleton, Oregon that had been using conventional tillage for decades. The soil was compacted and lifeless. Three years later, that same farm is thriving under a cover cropping and compost regimen funded by Bob's Red Mill. The topsoil is darker, earthworms have returned, and the farmer reports needing significantly less irrigation. 'We've always believed that great food starts with great soil,' said the company's sustainability director. 'Restore Hub gave us a way to put that belief into action across the entire Pacific Northwest.' Their partnership has since expanded to 35 projects spanning grain, seed, and pulse farms throughout Oregon and Washington."
+  },
+  {
+    "id": "funder-new-seasons-market",
+    "name": "New Seasons Market",
+    "slug": "new-seasons-market",
+    "description": "Regional grocery chain channeling a portion of every transaction toward regenerative farming practices on local farms across Oregon and Washington.",
+    "partnerSince": "2023-01-10",
+    "contributionTotal": 182500,
+    "regions": ["OR", "WA"],
+    "projectsSupported": 18,
+    "acresImpacted": 1200,
+    "practiceBreakdown": {
+      "compost_application": 5,
+      "cover_cropping": 4,
+      "hedgerow_planting": 3,
+      "reduced_tillage": 3,
+      "nutrient_management": 2,
+      "riparian_buffer": 1
+    },
+    "collectiveImpact": {
+      "estimatedCarbonLow": 1680,
+      "estimatedCarbonHigh": 3120
+    }
+  },
+  {
+    "id": "funder-kind-bar",
+    "name": "Kind Bar",
+    "slug": "kind-bar",
+    "description": "National snack brand taking a supply-chain-wide approach to regenerative agriculture, funding soil health projects across every region where their ingredient farms operate.",
+    "partnerSince": "2021-06-22",
+    "contributionTotal": 618000,
+    "regions": ["CA", "CO", "OR"],
+    "projectsSupported": 52,
+    "acresImpacted": 4500,
+    "practiceBreakdown": {
+      "cover_cropping": 12,
+      "compost_application": 9,
+      "managed_grazing": 8,
+      "reduced_tillage": 7,
+      "nutrient_management": 6,
+      "hedgerow_planting": 4,
+      "silvopasture": 3,
+      "windbreaks": 2,
+      "riparian_buffer": 1
+    },
+    "collectiveImpact": {
+      "estimatedCarbonLow": 6300,
+      "estimatedCarbonHigh": 11700
+    }
+  },
+  {
+    "id": "funder-whole-foods",
+    "name": "Whole Foods",
+    "slug": "whole-foods",
+    "description": "Grocery leader funding regenerative transitions for producers across multiple regions, connecting consumer dollars directly to measurable soil health outcomes.",
+    "partnerSince": "2022-09-01",
+    "contributionTotal": 384000,
+    "regions": ["CA", "OR", "WA", "CO"],
+    "projectsSupported": 28,
+    "acresImpacted": 2100,
+    "practiceBreakdown": {
+      "compost_application": 7,
+      "cover_cropping": 6,
+      "managed_grazing": 5,
+      "nutrient_management": 4,
+      "reduced_tillage": 3,
+      "hedgerow_planting": 2,
+      "riparian_buffer": 1
+    },
+    "collectiveImpact": {
+      "estimatedCarbonLow": 2940,
+      "estimatedCarbonHigh": 5460
+    },
+    "storyNarrative": "Whole Foods joined Restore Hub with a clear mission: make it easy for shoppers to support the land that feeds them. Their funding model allocates contributions across every region where their supplier farms operate, ensuring that the ecological benefits are felt close to the source. In their first year, they helped a diversified vegetable operation on California's Central Coast transition 120 acres to cover cropping and compost application. The farm saw a 30% reduction in synthetic fertilizer use within two seasons. 'Our customers want to know their purchases make a difference beyond the shelf,' noted their regenerative agriculture program lead. 'This partnership turns that aspiration into acres of real impact.'"
+  },
+  {
+    "id": "funder-tillamook",
+    "name": "Tillamook",
+    "slug": "tillamook",
+    "description": "Farmer-owned dairy cooperative investing in riparian restoration and managed grazing to protect waterways and build healthy pastureland across Oregon.",
+    "partnerSince": "2023-04-18",
+    "contributionTotal": 148500,
+    "regions": ["OR"],
+    "projectsSupported": 12,
+    "acresImpacted": 900,
+    "practiceBreakdown": {
+      "riparian_buffer": 5,
+      "managed_grazing": 4,
+      "compost_application": 2,
+      "nutrient_management": 1
+    },
+    "collectiveImpact": {
+      "estimatedCarbonLow": 1260,
+      "estimatedCarbonHigh": 2340
+    }
+  }
+]
