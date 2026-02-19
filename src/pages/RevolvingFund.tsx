@@ -33,7 +33,7 @@ export default function RevolvingFund() {
         className="rounded-xl px-6 py-5"
         style={{ background: 'var(--gradient-earth)', color: '#FFFFFF' }}
       >
-        <h2 className="text-xl font-bold mb-1" style={{ fontFamily: 'var(--font-heading)' }}>
+        <h2 className="text-xl font-bold mb-1" style={{ fontFamily: 'var(--font-heading)', color: 'rgba(255, 255, 255, 0.85)' }}>
           Revolving Fund Tracker
         </h2>
         <p className="text-sm opacity-80">

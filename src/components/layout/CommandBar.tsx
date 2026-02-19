@@ -44,11 +44,11 @@ const SUGGESTIONS_BY_PAGE: Record<string, string[]> = {
     'How many acres use compost application?',
     'Which states have the most compost projects?',
   ],
-  '/ledger': [
-    'How many credit classes are on the Regen Ledger?',
-    'What credit types are available?',
-    'Show me recent credit batch issuances',
-    'How many projects are registered on-chain?',
+  '/grants': [
+    'Show me the current grant round status',
+    'How much has been deployed vs requested?',
+    'What is the average grant size by state?',
+    'Which fund sources have the most projects?',
   ],
 };
 

@@ -5,16 +5,16 @@ import {
   BookOpen,
   RefreshCcw,
   FlaskConical,
-  Database,
+  ClipboardList,
 } from 'lucide-react';
 
 const MOBILE_NAV_ITEMS = [
   { path: '/', label: 'Dashboard', icon: LayoutDashboard },
   { path: '/projects', label: 'Projects', icon: Sprout },
-  { path: '/stories', label: 'Stories', icon: BookOpen },
+  { path: '/stories', label: 'Impact', icon: BookOpen },
   { path: '/fund', label: 'Fund', icon: RefreshCcw },
   { path: '/compost', label: 'Compost', icon: FlaskConical },
-  { path: '/ledger', label: 'Ledger', icon: Database },
+  { path: '/grants', label: 'Grants', icon: ClipboardList },
 ];
 
 export default function MobileNav() {

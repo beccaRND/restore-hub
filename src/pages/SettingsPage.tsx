@@ -12,7 +12,6 @@ import {
   EyeOff,
   Info,
 } from 'lucide-react';
-import { useRegenLedger } from '../hooks/useRegenLedger';
 import { useRegenKOI } from '../hooks/useRegenKOI';
 import { useProjects } from '../hooks/useProjects';
 import { useFunders } from '../hooks/useFunders';
@@ -119,19 +118,11 @@ function DataSourceSection() {
    Integration Status
    ======================================== */
 function IntegrationStatusSection() {
-  const { status: ledgerStatus } = useRegenLedger();
   const { status: koiStatus } = useRegenKOI();
   const { data: projects } = useProjects();
   const { data: funders } = useFunders();
 
   const integrations = [
-    {
-      name: 'Regen Ledger',
-      description: 'On-chain credit classes, batches, and marketplace data',
-      status: ledgerStatus,
-      url: API_CONFIG.regenLedger.url,
-      envVar: 'VITE_REGEN_LEDGER_MCP_URL',
-    },
     {
       name: 'Regen KOI',
       description: 'AI-powered semantic search and narrative generation',
@@ -284,7 +275,6 @@ function ApiKeysSection() {
     { label: 'Airtable API Key', envVar: 'VITE_AIRTABLE_API_KEY', value: API_CONFIG.airtable.apiKey },
     { label: 'Airtable Base ID', envVar: 'VITE_AIRTABLE_BASE_ID', value: API_CONFIG.airtable.baseId },
     { label: 'Regen KOI MCP URL', envVar: 'VITE_REGEN_KOI_MCP_URL', value: API_CONFIG.regenKOI.url },
-    { label: 'Regen Ledger MCP URL', envVar: 'VITE_REGEN_LEDGER_MCP_URL', value: API_CONFIG.regenLedger.url },
     { label: 'Mapbox Token', envVar: 'VITE_MAPBOX_TOKEN', value: API_CONFIG.mapbox.token },
   ];
 

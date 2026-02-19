@@ -15,9 +15,6 @@ export const API_CONFIG = {
   regenKOI: {
     url: import.meta.env.VITE_REGEN_KOI_MCP_URL || '',
   },
-  regenLedger: {
-    url: import.meta.env.VITE_REGEN_LEDGER_MCP_URL || '',
-  },
   mapbox: {
     token: import.meta.env.VITE_MAPBOX_TOKEN || '',
   },

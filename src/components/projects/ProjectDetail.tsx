@@ -69,7 +69,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
           <div className="flex items-start justify-between">
             <div>
               <StatusBadge status={project.availability} className="mb-3" />
-              <h1 className="text-4xl font-bold text-white" style={{ fontFamily: 'var(--font-heading)' }}>
+              <h1 className="text-4xl font-bold" style={{ fontFamily: 'var(--font-heading)', color: 'rgba(255, 255, 255, 0.75)' }}>
                 {project.farmName}
               </h1>
               <div className="flex items-center gap-1.5 mt-2 text-white/80">

@@ -3,10 +3,10 @@ export const APP_NAME = 'Restore Hub';
 export const NAV_ITEMS = [
   { path: '/', label: 'Dashboard', icon: 'LayoutDashboard' as const },
   { path: '/projects', label: 'Projects', icon: 'Sprout' as const },
-  { path: '/stories', label: 'Funder Stories', icon: 'BookOpen' as const },
+  { path: '/stories', label: 'Funder Impact', icon: 'BookOpen' as const },
   { path: '/fund', label: 'Revolving Fund', icon: 'RefreshCcw' as const },
   { path: '/compost', label: 'Compost Protocol', icon: 'FlaskConical' as const },
-  { path: '/ledger', label: 'Regen Ledger', icon: 'Database' as const },
+  { path: '/grants', label: 'Grant Tracker', icon: 'ClipboardList' as const },
   { path: '/map', label: 'Project Map', icon: 'MapPin' as const },
   { path: '/settings', label: 'Settings', icon: 'Settings' as const },
 ] as const;

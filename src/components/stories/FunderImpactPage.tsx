@@ -100,7 +100,7 @@ export default function FunderImpactPage({ funder }: FunderImpactPageProps) {
           <p className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: 'var(--zfp-green-light)' }}>
             Impact Story
           </p>
-          <h1 className="text-4xl font-bold text-white mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
+          <h1 className="text-4xl font-bold mb-2" style={{ fontFamily: 'var(--font-heading)', color: 'var(--zfp-cream)' }}>
             {funder.name}
           </h1>
           <p className="text-base text-white/70 max-w-2xl">

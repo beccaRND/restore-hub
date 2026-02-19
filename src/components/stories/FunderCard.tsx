@@ -52,8 +52,8 @@ export default function FunderCard({ funder, index = 0 }: FunderCardProps) {
           />
           <div className="absolute bottom-4 left-5 right-5">
             <h3
-              className="text-2xl font-bold text-white"
-              style={{ fontFamily: 'var(--font-heading)' }}
+              className="text-2xl font-bold"
+              style={{ fontFamily: 'var(--font-heading)', color: 'var(--zfp-cream)' }}
             >
               {funder.name}
             </h3>

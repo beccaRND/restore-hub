@@ -16,7 +16,7 @@ import FunderStories from './pages/FunderStories';
 import FunderStoryPage from './pages/FunderStoryPage';
 import RevolvingFund from './pages/RevolvingFund';
 import CompostProtocol from './pages/CompostProtocol';
-import RegenLedgerPage from './pages/RegenLedgerPage';
+import GrantCycleTracker from './pages/GrantCycleTracker';
 import MapPage from './pages/MapPage';
 import SettingsPage from './pages/SettingsPage';
 
@@ -32,10 +32,10 @@ const queryClient = new QueryClient({
 const PAGE_TITLES: Record<string, { title: string; subtitle?: string }> = {
   '/': { title: 'Dashboard', subtitle: 'Overview of ZFP programs and demand signals' },
   '/projects': { title: 'Projects', subtitle: '425+ farm projects across 4 states' },
-  '/stories': { title: 'Funder Stories', subtitle: 'Corporate engagement and impact narratives' },
+  '/stories': { title: 'Funder Impact', subtitle: 'Corporate engagement and impact narratives' },
   '/fund': { title: 'Revolving Fund', subtitle: 'Grant-to-credit lifecycle tracking' },
   '/compost': { title: 'Compost Protocol', subtitle: 'Compost credit modeling and scenarios' },
-  '/ledger': { title: 'Regen Ledger', subtitle: 'On-chain ecological data and credit classes' },
+  '/grants': { title: 'Grant Tracker', subtitle: 'Grant rounds, pipeline status, and deployment rates' },
   '/map': { title: 'Project Map', subtitle: 'Geographic view of all farm projects' },
   '/settings': { title: 'Settings', subtitle: 'Configuration and integrations' },
 };
@@ -111,7 +111,7 @@ function AppLayout() {
             <Route path="/stories/:slug" element={<FunderStoryPage />} />
             <Route path="/fund" element={<RevolvingFund />} />
             <Route path="/compost" element={<CompostProtocol />} />
-            <Route path="/ledger" element={<RegenLedgerPage />} />
+            <Route path="/grants" element={<GrantCycleTracker />} />
             <Route path="/map" element={<MapPage />} />
             <Route path="/settings" element={<SettingsPage />} />
           </Routes>

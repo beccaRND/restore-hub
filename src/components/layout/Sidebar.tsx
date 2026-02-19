@@ -5,7 +5,7 @@ import {
   BookOpen,
   RefreshCcw,
   FlaskConical,
-  Database,
+  ClipboardList,
   MapPin,
   Settings,
   Search,
@@ -20,7 +20,7 @@ const ICON_MAP = {
   BookOpen,
   RefreshCcw,
   FlaskConical,
-  Database,
+  ClipboardList,
   MapPin,
   Settings,
 } as const;
