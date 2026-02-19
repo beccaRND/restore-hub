@@ -270,8 +270,8 @@ export default function GrantCycleTracker() {
                     tickFormatter={(v: number) => formatCurrency(v)}
                   />
                   <Tooltip
-                    formatter={(value: number) => [
-                      formatCurrency(value),
+                    formatter={(value) => [
+                      formatCurrency(value as number),
                       'Deployed',
                     ]}
                     contentStyle={{
@@ -314,7 +314,7 @@ export default function GrantCycleTracker() {
                     ))}
                   </Pie>
                   <Tooltip
-                    formatter={(value: number) => formatCurrency(value)}
+                    formatter={(value) => formatCurrency(value as number)}
                     contentStyle={{
                       backgroundColor: 'var(--zfp-white)',
                       border: '1px solid var(--zfp-border)',

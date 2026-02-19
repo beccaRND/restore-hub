@@ -171,8 +171,8 @@ function IntegrationStatusSection() {
             <span
               className="text-[11px] font-medium px-2 py-0.5 rounded-full"
               style={{
-                backgroundColor: int.status === 'online' ? 'var(--zfp-green-pale)' : int.status === 'connecting' ? '#fef3c7' : 'var(--zfp-cream-dark)',
-                color: int.status === 'online' ? 'var(--zfp-green)' : int.status === 'connecting' ? '#d97706' : 'var(--zfp-text-light)',
+                backgroundColor: int.status === 'online' ? 'var(--zfp-green-pale)' : 'var(--zfp-cream-dark)',
+                color: int.status === 'online' ? 'var(--zfp-green)' : 'var(--zfp-text-light)',
               }}
             >
               {int.status}
