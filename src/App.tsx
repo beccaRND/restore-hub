@@ -6,6 +6,8 @@ import Sidebar from './components/layout/Sidebar';
 import TopBar from './components/layout/TopBar';
 import MobileNav from './components/layout/MobileNav';
 import CommandBar from './components/layout/CommandBar';
+import DemoModeToggle from './components/DemoModeToggle';
+import { DemoModeProvider } from './context/DemoModeContext';
 import { useProjects } from './hooks/useProjects';
 import { useFunders } from './hooks/useFunders';
 
@@ -19,6 +21,8 @@ import CompostProtocol from './pages/CompostProtocol';
 import GrantCycleTracker from './pages/GrantCycleTracker';
 import MapPage from './pages/MapPage';
 import SettingsPage from './pages/SettingsPage';
+import ReviewPage from './pages/ReviewPage';
+import ScenariosPage from './pages/ScenariosPage';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -31,6 +35,8 @@ const queryClient = new QueryClient({
 
 const PAGE_TITLES: Record<string, { title: string; subtitle?: string }> = {
   '/': { title: 'Dashboard', subtitle: 'Overview of ZFP programs and demand signals' },
+  '/review': { title: 'Application Review', subtitle: 'AI-assisted grant application scoring and review' },
+  '/scenarios': { title: 'Award Scenarios', subtitle: 'Build and compare grant award scenarios' },
   '/projects': { title: 'Projects', subtitle: '425+ farm projects across 4 states' },
   '/stories': { title: 'Funder Impact', subtitle: 'Corporate engagement and impact narratives' },
   '/fund': { title: 'Revolving Fund', subtitle: 'Grant-to-credit lifecycle tracking' },
@@ -105,6 +111,8 @@ function AppLayout() {
         <div className="px-4 sm:px-6 py-6 max-w-[1200px] mx-auto">
           <Routes>
             <Route path="/" element={<Dashboard />} />
+            <Route path="/review" element={<ReviewPage />} />
+            <Route path="/scenarios" element={<ScenariosPage />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/:id" element={<ProjectDetailPage />} />
             <Route path="/stories" element={<FunderStories />} />
@@ -123,6 +131,9 @@ function AppLayout() {
 
       {/* Command bar overlay */}
       <CommandBar isOpen={commandBarOpen} onClose={closeCommandBar} projects={projects} funders={funders} />
+
+      {/* Demo mode toggle (floating) */}
+      <DemoModeToggle />
     </div>
   );
 }
@@ -130,9 +141,11 @@ function AppLayout() {
 export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
-        <AppLayout />
-      </BrowserRouter>
+      <DemoModeProvider>
+        <BrowserRouter>
+          <AppLayout />
+        </BrowserRouter>
+      </DemoModeProvider>
     </QueryClientProvider>
   );
 }

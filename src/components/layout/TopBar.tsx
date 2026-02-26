@@ -1,4 +1,5 @@
 import { Search } from 'lucide-react';
+import { useDemoMode } from '../../context/DemoModeContext';
 
 interface TopBarProps {
   title: string;
@@ -7,9 +8,19 @@ interface TopBarProps {
 }
 
 export default function TopBar({ title, subtitle, onCommandBarOpen }: TopBarProps) {
+  const { enabled, overrides } = useDemoMode();
+
+  // Add demo mode top offset when banner is showing
+  const topOffset = enabled ? 'top-[28px]' : 'top-0';
+
+  // If on Dashboard and demo has custom org name, show it in subtitle
+  const displaySubtitle =
+    enabled && overrides.organizationName && title === 'Dashboard'
+      ? `Overview of ${overrides.organizationName} programs`
+      : subtitle;
   return (
     <header
-      className="sticky top-0 z-30 flex items-center justify-between px-6 py-4 border-b backdrop-blur-sm"
+      className={`sticky ${topOffset} z-30 flex items-center justify-between px-6 py-4 border-b backdrop-blur-sm`}
       style={{
         backgroundColor: 'rgba(250, 246, 241, 0.9)',
         borderColor: 'var(--zfp-border)',
@@ -22,9 +33,9 @@ export default function TopBar({ title, subtitle, onCommandBarOpen }: TopBarProp
         >
           {title}
         </h1>
-        {subtitle && (
+        {displaySubtitle && (
           <p className="text-sm mt-0.5" style={{ color: 'var(--zfp-text-muted)' }}>
-            {subtitle}
+            {displaySubtitle}
           </p>
         )}
       </div>

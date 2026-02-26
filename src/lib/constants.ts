@@ -2,6 +2,8 @@ export const APP_NAME = 'Restore Hub';
 
 export const NAV_ITEMS = [
   { path: '/', label: 'Dashboard', icon: 'LayoutDashboard' as const },
+  { path: '/review', label: 'Application Review', icon: 'ClipboardCheck' as const },
+  { path: '/scenarios', label: 'Award Scenarios', icon: 'GitBranch' as const },
   { path: '/projects', label: 'Projects', icon: 'Sprout' as const },
   { path: '/stories', label: 'Funder Impact', icon: 'BookOpen' as const },
   { path: '/fund', label: 'Revolving Fund', icon: 'RefreshCcw' as const },

@@ -6,6 +6,8 @@ import {
   RefreshCcw,
   FlaskConical,
   ClipboardList,
+  ClipboardCheck,
+  GitBranch,
   MapPin,
   Settings,
   Search,
@@ -13,6 +15,7 @@ import {
   PanelLeft,
 } from 'lucide-react';
 import { NAV_ITEMS } from '../../lib/constants';
+import { useDemoMode } from '../../context/DemoModeContext';
 
 const ICON_MAP = {
   LayoutDashboard,
@@ -21,6 +24,8 @@ const ICON_MAP = {
   RefreshCcw,
   FlaskConical,
   ClipboardList,
+  ClipboardCheck,
+  GitBranch,
   MapPin,
   Settings,
 } as const;
@@ -32,6 +37,9 @@ interface SidebarProps {
 }
 
 export default function Sidebar({ collapsed, onToggle, onCommandBarOpen }: SidebarProps) {
+  const { demoOrgName } = useDemoMode();
+  const brandName = demoOrgName('RESTORE HUB');
+
   return (
     <aside
       className={`fixed top-0 left-0 h-screen z-40 flex flex-col border-r transition-all duration-300 ease-in-out ${
@@ -50,7 +58,7 @@ export default function Sidebar({ collapsed, onToggle, onCommandBarOpen }: Sideb
               className="text-lg tracking-wide font-bold leading-tight"
               style={{ fontFamily: 'var(--font-heading)', color: 'var(--zfp-green-deep)' }}
             >
-              RESTORE HUB
+              {brandName}
             </h1>
             <span
               className="text-[10px] tracking-wide"

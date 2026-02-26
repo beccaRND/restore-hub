@@ -1,5 +1,7 @@
 import { useProjects } from '../hooks/useProjects';
 import CreditCalculator from '../components/compost/CreditCalculator';
+import Forecasting from '../components/compost/Forecasting';
+import JurisdictionView from '../components/compost/JurisdictionView';
 import ScenarioBuilder from '../components/compost/ScenarioBuilder';
 import ProtocolDocs from '../components/compost/ProtocolDocs';
 import CompostProjects from '../components/compost/CompostProjects';
@@ -30,6 +32,12 @@ export default function CompostProtocol() {
 
       {/* Calculator */}
       <CreditCalculator />
+
+      {/* Forecasting */}
+      <Forecasting />
+
+      {/* Jurisdiction comparison */}
+      <JurisdictionView />
 
       {/* Two-column: scenario builder + projects list */}
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
